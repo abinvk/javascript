@@ -1,0 +1,10 @@
+button {
+    color: white;
+    background-color: green;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 20px;
+    border-radius: 12px;
+    height: 120px;
+    align-items: center;
+}
