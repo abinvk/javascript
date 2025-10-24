@@ -15,3 +15,9 @@ console.log(variables);
 let calculation = 5+5;
 console.log(calculation);
 console.log(calculation + 10);
+
+let result = calculation +10;
+console.log(result);
+
+let massege ="Hello World";
+console.log(massege);
