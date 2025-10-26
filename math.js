@@ -21,3 +21,9 @@ console.log(result);
 
 let massege ="Hello World";
 console.log(massege);
+console.log(massege);console.log(';')
+
+variable1 = 7;
+console.log(variable1);
+variable1 = variable1 + 3;
+console.log(variable1);
