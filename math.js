@@ -27,3 +27,5 @@ variable1 = 7;
 console.log(variable1);
 variable1 = variable1 + 3;
 console.log(variable1);
+console.log(typeof variable1);
+console.log(typeof massege);
