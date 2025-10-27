@@ -31,6 +31,38 @@
     console.log(`Cart quantity: ${CartQuantity}`);
     ">Reset Cart</button>
 
+<!--5h. In the Cart Quantity project, add 2 more buttons '+4' and '+5', which increase the quantity by 4 and 5 when you click them. Try using +=-->
+<!--Answer-->
+
+    <button onclick="
+    CartQuantity=CartQuantity +4;
+    console.log(`Cart quantity: ${CartQuantity}`);
+    ">+4</button>
+
+    <button onclick="
+    CartQuantity=CartQuantity +5;
+    console.log(`Cart quantity: ${CartQuantity}`);
+    ">+5</button>
+
+<!--5i. In the Cart Quantity project, add a button 'Remove from cart', which decreases the cart quantity by 1-->
+<!--Answer-->
+<button onclick="
+    CartQuantity=CartQuantity -1;
+    console.log(`Cart quantity: ${CartQuantity}`);
+    ">Remove from cart</button>
+
+<!--5j. Add 2 buttons '-2' and '-3', which decrease the quantity by 2 and 3-->
+<!--Answer-->
+
+<button onclick="
+    CartQuantity-=2;
+    console.log(`Cart quantity: ${CartQuantity}`);
+    ">-2</button>
+
+<button onclick="
+    CartQuantity-=3;
+    console.log(`Cart quantity: ${CartQuantity}`);
+    ">-3</button>
 
     <script>
         let CartQuantity = 0;
