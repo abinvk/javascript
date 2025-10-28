@@ -7,69 +7,163 @@ body{
     background-color: rgb(51, 51, 51);
     color: white;
     border: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    cursor: pointer;
+    
 }
 .button8{
     background-color: rgb(51, 51, 51);
     color: white;
     border: none;
+    width: 60px;
+    height: 60px;
+     border-radius: 60px;
+     cursor: pointer;
 }
 .button9{
     background-color: rgb(51, 51, 51);
     color: white;
     border: none;
+    width: 60px;
+    height: 60px;
+     border-radius: 60px;
+     cursor: pointer;
 }
 .button1-1{
     background-color: rgb(255, 165, 0);
     color: white;
     border: none;
+    width: 60px;
+    height: 60px;
+     border-radius: 60px;
+     cursor: pointer;
 }
 .button4{
     background-color: rgb(51, 51, 51);
     color: white;
     border: none;
+    height: 60px;
+    width: 60px;
+     border-radius: 60px;
+     cursor: pointer;
+
 }
 .button5{
     background-color: rgb(51, 51, 51);
     color: white;
     border: none;
+    height: 60px;
+    width: 60px;
+     border-radius: 60px;
+     cursor: pointer;
+
 }
 .button6{
     background-color: rgb(51, 51, 51);
     color: white;
     border: none;
+    height: 60px;
+    width: 60px;
+     border-radius: 60px;
+     cursor: pointer;
+
 }
 .button1-2{
     background-color: rgb(255, 165, 0);
     color: white;
     border: none;
+    height: 60px;
+    width: 60px;
+     border-radius: 60px;
+     cursor: pointer;
+
 }
 .button1{
     background-color: rgb(51, 51, 51);
     color: white;
     border: none;
+    height: 60px;
+    width: 60px;
+     border-radius: 60px;
+     cursor: pointer;
+
 }
 .button2{
     background-color: rgb(51, 51, 51);
     color: white;
+    border-color: black;
     border: none;
+    height: 60px;
+    width: 60px;
+    gap: 100px;
+     border-radius: 60px;
+     cursor: pointer;
+
 }
 .button3{
     background-color: rgb(51, 51, 51);
     color: white;
     border: none;
+    height: 60px;
+    width: 60px;
+     border-radius: 60px;
+     cursor: pointer;
+
 }
 .button1-3{
     background-color: rgb(255, 165, 0);;
     color: white;
     border: none;
+    height: 60px;
+    width: 60px;
+     border-radius: 60px;
+     cursor: pointer;
 }
 .button0{
     background-color: rgb(51, 51, 51);
     color: white;
     border: none;
+    height: 60px;
+    width: 60px;
+     border-radius: 60px;
+     cursor: pointer;
 }
 .button1-4{
     background-color: rgb(255, 165, 0);
     color: white;
     border: none;
-}   
+    height: 60px;
+    width: 60px;
+     border-radius: 60px;
+     cursor: pointer;
+}
+.button1-5{
+    background-color: rgb(51, 51, 51); 
+    color: white;
+    border: none;
+    height: 60px;
+    width: 60px;
+     border-radius: 60px;
+     cursor: pointer;
+} 
+.button1-6{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border: none;
+    height: 60px;
+    width: 60px;
+     border-radius: 60px;
+     cursor: pointer;
+}
+.buttonC{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    color: white;
+    border: none;
+    height: 60px;
+    width: 60px;
+     border-radius: 60px;
+     cursor: pointer;
+}
