@@ -18,10 +18,10 @@
         function1();
         */
 
-        function calculateTax(parameter1){
-            console.log(parameter1 * 0.1);
+        function calculateTax(parameter1, taxPercent = 0.1){
+            console.log(parameter1 * taxPercent);
         }
-        calculateTax(3000);
+        calculateTax(3000, 0.2);
         calculateTax(6000);
 
 
