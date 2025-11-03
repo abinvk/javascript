@@ -18,7 +18,7 @@
         function1();
         */
 
-        function calculateTax(parameter1, taxPercent = 0.1){
+        /*function calculateTax(parameter1, taxPercent = 0.1){
             console.log(parameter1 * taxPercent);
         }
         calculateTax(3000, 0.2);
@@ -26,7 +26,7 @@
 
         /*Create a function called 'greet' that displays the message 'Hello! in the console. Call/ run this function a few times using: greet();*/
 
-        function greet() {
+        /*function greet() {
             console.log('hello');
         }
         greet();
@@ -35,7 +35,7 @@
 
         /*Create a function called 'greet' that displays the message 'Hello! in the console. Call/ run this function a few times using: greet();*/
 
-        function greet(name){
+        /*function greet(name){
             console.log(`helle ${name}`);
         }
         greet('simon');
@@ -46,16 +46,16 @@
          (Hint: use an if-statement. Since undefined is a falsy value, you can use: if (!name) { ...} to check if 'name' is undefined),*/ 
          
 
-         function greet(name){
-            if (name){
+         function greet(name) {
+            if (!name) {
                 console.log('hey there');
-            }else {
-                console.log(`helle ${name}`);
+            } else {
+                console.log(`hello ${name}!`);
             }
          }
 
-         greet();
          greet('abin');
+         greet();
          greet();
     
          
