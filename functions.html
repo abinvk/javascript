@@ -24,6 +24,43 @@
         calculateTax(3000, 0.2);
         calculateTax(6000);
 
+        /*Create a function called 'greet' that displays the message 'Hello! in the console. Call/ run this function a few times using: greet();*/
+
+        function greet() {
+            console.log('hello');
+        }
+        greet();
+        greet();
+        greet();
+
+        /*Create a function called 'greet' that displays the message 'Hello! in the console. Call/ run this function a few times using: greet();*/
+
+        function greet(name){
+            console.log(`helle ${name}`);
+        }
+        greet('simon');
+        greet('abin');
+        greet('b m  w');
+
+        /*Try calling greet() without a name (it will display 'Hello undefined!'). Modify the function so that if 'name' is undefined, it will display 'Hi there!' instead.
+         (Hint: use an if-statement. Since undefined is a falsy value, you can use: if (!name) { ...} to check if 'name' is undefined),*/ 
+         
+
+         function greet(name){
+            if (name){
+                console.log('hey there');
+            }else {
+                console.log(`helle ${name}`);
+            }
+         }
+
+         greet();
+         greet('abin');
+         greet();
+    
+         
+        
+
 
 
 
