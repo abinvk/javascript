@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Project</title>
+</head>
+<body>
+    <h2>WEATHER PROJECT</h2>
+
+    <p>Palakkad Weather.</p>
+    <p>Malappuram Weather.</p>
+    <p>Calicut Weather.</p>
+
+    <script>
+
+    function convertTemperature(Fahrenheit){
+    return (Fahrenheit - 32) * 5/9;
+
+    }
+         
+    function convertTemperature(celsius){
+        return (celsius * 9/5) + 32;
+    }
+
+    function convertTemperature(degrees, unit){
+        if (unit === 'C'){
+            const fahrenheit = convertToFahrenheit(degrees);
+            return `${Math.round(fahrenheit)}F`;
+        }else if (unit === 'F'){
+            const celsius = convertToCelsius(degrees);
+            return `${Math.round(celsius)}C`;
+        }else{
+            return 'invalid unit';
+          } 
+        }
+        console.log(convertTemperature(25, 'C'));
+        console,console.log(convertTemperature(86, 'F'));
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
