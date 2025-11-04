@@ -18,7 +18,7 @@
         function1();
         */
 
-        /*function calculateTax(parameter1, taxPercent = 0.1){
+        function calculateTax(parameter1, taxPercent = 0.1){
             console.log(parameter1 * taxPercent);
         }
         calculateTax(3000, 0.2);
@@ -26,7 +26,7 @@
 
         /*Create a function called 'greet' that displays the message 'Hello! in the console. Call/ run this function a few times using: greet();*/
 
-        /*function greet() {
+        function greet() {
             console.log('hello');
         }
         greet();
@@ -35,7 +35,7 @@
 
         /*Create a function called 'greet' that displays the message 'Hello! in the console. Call/ run this function a few times using: greet();*/
 
-        /*function greet(name){
+        function greet(name){
             console.log(`helle ${name}`);
         }
         greet('simon');
@@ -50,7 +50,7 @@
             if (!name) {
                 console.log('hey there');
             } else {
-                console.log(`hello ${name}!`);
+                console.log(`hello ${name}`);
             }
          }
 
@@ -59,7 +59,30 @@
          greet();
     
          
+        /* Create a function 'convertToFahrenheit(celsius)' that takes a number in degrees Celsius
+           and returns a number in degrees Fahrenheit.
+           Formula: Fahrenheit = (Celsius * 9/5) + 32
+           convertToFahrenheit(25) => 77 */
+
+        function convertToFahrenheit(celsius) {
+            return (celsius * 9/5) + 32;
+        }
+        console.log(convertToFahrenheit(25)); 
+
+        /*Create a function 'convertToCelsius(fahrenheit)' that takes a number in degrees Fahrenheit and returns a number in degrees Celsius.
+        Formula: Celsius = (Fahrenheit - 32) * 5/9
+        convertToCelsius(86) => 30 */
+
+        function convertToCelsius(Fahrenheit){
+            return (Fahrenheit - 32) * 5/9;
+        }
+        console.log(convertToCelsius(86));
+
         
+        
+
+         
+
 
 
 
