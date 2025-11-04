@@ -78,6 +78,39 @@
         }
         console.log(convertToCelsius(86));
 
+
+        /*Create a function 'convertTemperature(degrees, unit)' that takes a number and a unit ('C' or 'F'), and converts it into the other unit.
+        convertTemperature(25, 'C') => '77F'
+        convertTemperature(86, 'F') => '30C'
+        Note: return a string, and try to reuse the functions from 7d and 7e */
+
+
+        function convertTemperature(Fahrenheit){
+             return (Fahrenheit - 32) * 5/9;
+
+        }
+         
+        function convertTemperature(celsius){
+            return (celsius * 9/5) + 32;
+        }
+
+        function convertTemperature(degrees, unit){
+            if (unit === 'C'){
+                const fahrenheit = convertToFahrenheit(degrees);
+                return `${Math.round(fahrenheit)}F`;
+            }else if (unit === 'F'){
+                const celsius = convertToCelsius(degrees);
+                return `${Math.round(celsius)}C`;
+            }else{
+                return 'invalid unit';
+            }
+        }
+        console.log(convertTemperature(25, 'C'));
+        console,console.log(convertTemperature(86, 'F'));
+        
+      
+    
+
         
         
 
