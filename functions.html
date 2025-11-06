@@ -355,7 +355,7 @@
     <br>
     <button onclick="updateCalculation('0')">0</button>
     <button onclick="updateCalculation('.')">.</button>
-    <button onclick="clearResult()">C</button>
+    <button onclick="clearResult()">=</button>
      
 
     <script>
@@ -367,37 +367,16 @@ function updateCalculation(value){
     document.getElementById('result').innerText = calculatoin;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function calculateResult(){
+    calculatoin = eval(calculatoin);
+    document.getElementById('result').innerText = calculatoin;
+}
+function clearResult(){
+    calculatoin = '';
+    document.getElementById('result').innerText = '';
+}
 
     </script>
-
-
-    
-
-
-
-
-
 
 
 </body>
