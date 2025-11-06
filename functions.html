@@ -335,17 +335,61 @@
 
     <p id="result"></p>
 
+    <button onclick="clearResult()">C</button>
+    <button onclick="calculateResult('/')">/</button>
+    <br>
     <button onclick="updateCalculation('7')">7</button>
     <button onclick="updateCalculation('8')">8</button>
     <button onclick="updateCalculation('9')">9</button>
+    <button onclick="calculateResult('*')">*</button>
     <br>
     <button onclick="updateCalculation('4')">4</button>
     <button onclick="updateCalculation('5')">5</button>
     <button onclick="updateCalculation('6')">6</button>
+    <button onclick="calculateResult('-')">-</button>
     <br>
     <button onclick="updateCalculation('1')">1</button>
     <button onclick="updateCalculation('2')">2</button>
     <button onclick="updateCalculation('3')">3</button>
+    <button onclick="updateCalculation('+')">+</button>
+    <br>
+    <button onclick="updateCalculation('0')">0</button>
+    <button onclick="updateCalculation('.')">.</button>
+    <button onclick="clearResult()">C</button>
+     
+
+    <script>
+
+
+let calculatoin ='';
+function updateCalculation(value){
+    calculatoin += value;
+    document.getElementById('result').innerText = calculatoin;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
 
 
     
