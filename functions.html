@@ -176,17 +176,58 @@
             }
             return Math.round(result) + ' ' + to
         }
-
-
-
-
-
-
-
-
         console.log(convertLength(5, 'miles', 'km'));
         console.log(convertLength(5, 'miles', 'km'));
         console.log(convertLength(5, 'miles', 'ft'));
+        console.log(convertLength(5, 'ibs', 'km'))
+
+        /*Update convertLength so that if you give it an invalid unit, it will return `Invalid unit: $(unit}
+        convertLength(5, 'lbs', 'Ibs') => 'Invalid unit: Ibs   */
+
+
+
+        function convertLength(length, from ,to){
+            let result;
+            if (from === to){
+                result = length;
+
+            // miles => km //
+            }else if (from === 'miles' && to === 'km'){
+                result = length * 1.6;
+
+            // km => miles //   
+            }else if (from === 'km' && to === 'miles'){
+                result = length / 1.6;
+
+            // miles => ft //
+            }else if (from === "miles" && to === 'ft'){
+                result = length * 3281;
+              
+            // ft => miles //
+
+            }else if (from === 'ft' && to === 'miles'){
+                result = length / 5280;
+
+            // km => ft //
+
+            }else if(from === 'km' && to === 'ft'){
+                result = length * 3281;
+
+            // ft => km //
+
+            }else if(from === 'ft' && to === 'km'){
+                result = length / 3281;
+            }else {
+                return 'invalid';
+            }
+            return Math.round(result) + ' ' + to
+        }
+        console.log(convertLength(5, 'miles', 'km'));
+        console.log(convertLength(5, 'miles', 'km'));
+        console.log(convertLength(5, 'miles', 'ft'));
+        console.log(convertLength(5, 'ibs', 'km'));
+        console.log(convertLength(5,'km','ibs'));
+
 
 
 
