@@ -385,9 +385,16 @@ function clearResult(){
         Create a function 'updateCartQuantity' and reuse the code */
 
     
-    <button onclick="
-    console.log(`Cart quantity: ${CartQuantity}`);
-    ">Show Quantity</button>
+    <div>
+        <button onclick="
+        console.log(`Cart quantity: ${CartQuantity}`);
+        ">Show Quantity</button>
+
+        <button onclick="
+        CartQuantity=CartQuantity +1;
+        console.log(`Cart quantity: ${CartQuantity}`);
+        ">Add to Cart</button>
+    </div>
 
 
 
