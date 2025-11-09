@@ -394,7 +394,7 @@ function clearResult(){
 
     <script>
 
-        let CartQuantity = 0;
+        let updateCardQuantity = 0;
 
         function updateCardQuantity(change = 0){
             CartQuantity += change;
@@ -404,8 +404,41 @@ function clearResult(){
         function resetCart(){
             CartQuantity = 0;
             console.log('Cart was Reset');
-            console.log(`Cart quantity: ${CartQuantity}`);
+            console.log(`Cart quantity: ${CartQuantity}`)
         }
+
+    </script>
+
+    <h2>My Sample Project</h2>
+
+
+    <button onclick="updateCardQuantity(1);">BMW</button>
+    <button onclick="updateCardQuantity(1);">BENZ</button>
+    <button onclick="updateCardQuantity(1);">AUDI</button>
+    <button onclick="updateCardQuantity(1);">VOLVO</button>
+    <button onclick="resetCart1();">All Clear</button>
+
+    <script>
+
+        let CartQuantity = 0;
+        function updateCardQuantity(changen = 0){
+            CartQuantity += change;
+            console.log(`Cart quantity: ${CartQuantity}`);
+
+            function resetCart1(){
+                CartQuantity = 0;
+                console.log('Cart was Reset');
+                console.log(`Cart quantity: ${CartQuantity}`)
+            }
+        }
+
+
+
+
+
+
+
+
 
 
     </script>
