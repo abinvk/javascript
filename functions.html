@@ -418,44 +418,35 @@ function clearResult(){
     <button onclick="updateCardQuantity(1);">VOLVO</button>
     <button onclick="resetCart1();">All Clear</button>
 
+    
+
     <script>
 
-        let CartQuantity = 0;
-        function updateCardQuantity(changen = 0){
-            CartQuantity += change;
-            console.log(`Cart quantity: ${CartQuantity}`);
+        let CartQuantity1 = 0;
 
-            function resetCart1(){
-                CartQuantity = 0;
-                console.log('Cart was Reset');
-                console.log(`Cart quantity: ${CartQuantity}`)
-            }
+        function updateCardQuantity(change = 0){
+            CartQuantity1 = change;
+            console.log(`Cart quantity:BMW ${CartQuantity1}`);
         }
 
+        function updateCardQuantity(change = 0){
+            CartQuantity1 = change;
+            console.log(`Cart quantity:BENZ ${CartQuantity1}`);
+        
+        }
+        function updateCardQuantity(change = 0){
+            CartQuantity1 = change;
+            console.log(`Cart quantity:AUDI ${CartQuantity1}`);
+        
+        }   
 
+        function resetCart1(){
+            CartQuantity1 = 0;
+            console.log('Cart was Reset');
+            console.log(`Cart quantity: ${CartQuantity1}`)
+        }
 
-
-
-
-
-
-
-
-    </script>
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
+        </script>
 </body>
 </html>
 </html>
