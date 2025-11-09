@@ -384,7 +384,31 @@ function clearResult(){
     <button onclick="updateCardQuantity;">Show Quanity</button>
     <button onclick="updateCardQuantity(1);">Add to Cart</button>
     <button onclick="updateCardQuantity(2);">+2</button>
-     <button onclick="updateCardQuantity(3);">+3</button>
+    <button onclick="updateCardQuantity(3);">+3</button>
+    <button onclick="resetCart()">Reset Cart</button>
+    <button onclick="updateCardQuantity(4);">+4</button>
+    <button onclick="updateCardQuantity(5);">+5</button>
+    <button onclick="updateCardQuantity(-1);">Remove from cart</button>
+    <button onclick="updateCardQuantity(-2);">-2</button>
+    <button onclick="updateCardQuantity(-3);">-3</button>
+
+    <script>
+
+        let CartQuantity = 0;
+
+        function updateCardQuantity(change = 0){
+            CartQuantity += change;
+            console.log(`Cart quantity: ${CartQuantity}`);
+        }
+
+        function resetCart(){
+            CartQuantity = 0;
+            console.log('Cart was Reset');
+            console.log(`Cart quantity: ${CartQuantity}`);
+        }
+
+
+    </script>
 
 
 
