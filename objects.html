@@ -43,12 +43,27 @@
 
         const product2 = {
             name: 'shirt',
-            ['deliveryTime']: '2 day'
+            ['deliveryTime']: '2 day',
+
+            rating: {
+                stars: 4.5,
+                count: 120
+            },
+            fun: function(){
+                console.log('This is a method inside an object');
+            }
+
+
         };
         console.log(product2);
         console.log(product2.name);
         console.log(product2['name']);  
         console.log(product2.deliveryTime);
+        console.log(product2.rating.stars);
+        console.log(product2.rating.count);
+        product2.fun();
+
+        console.log(typeof console);
 
 
 
