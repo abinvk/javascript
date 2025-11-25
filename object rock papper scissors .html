@@ -29,7 +29,9 @@
 
           <script>
 
-            const score = {
+            let score = JSON.parase(localStorage.getItem
+
+             ('score')) || { 
               wins: 0,
               losses: 0,
               ties: 0
@@ -74,6 +76,8 @@
           }else if (result === 'Tie'){
           score.ties += 1;
           }
+
+
 
 
           alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
