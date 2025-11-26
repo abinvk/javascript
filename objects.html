@@ -19,28 +19,22 @@
         };
         console.log(product);
         console.log(product.name);
-        
         console.log(product.model);
         console.log(product.price);
         console.log(product.brand);
         product.name = 'Smartphone';
         product.brand = 'Apple';
         console.log(product);
-
         product.nweProperty = "google";
         console.log(product);
-    
-
-
-        const product2 = {
+        const product3 = {
             name: 'shirt'
 
         }
         console.log(product2);
         console.log(product2.name);
-        console.log(product2['name']);
-        */
-
+        console.log(product2['name'])
+    }
         const product2 = {
             name: 'shirt',
             ['deliveryTime']: '2 day',
@@ -52,8 +46,6 @@
             fun: function(){
                 console.log('This is a method inside an object');
             }
-
-
         };
         console.log(product2);
         console.log(product2.name);
@@ -66,13 +58,34 @@
         console.log(typeof console);
 
         console.log(JSON.stringify(product2));
+        */
 
 
 
+        const product = {
+
+            name: 'Laptop',
+            brand: 'Dell',
+            model: 'XPS 13',
+            price: 999.99,
+
+        }
+    
+
+        console.log(product);
+        product.nweProperty = "google";
+        console.log(product);
+        delete product.model;
+        product.nweProperty = "XPS 15";
+        console.log(product);
 
 
-
-
+        const object1 = { value : 10};
+        const object2 = object1;
+        object1.value = 20;
+        console.log(object2.value);
+        
+        
 
     </script>
 </body>
