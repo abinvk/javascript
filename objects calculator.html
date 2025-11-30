@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="objects calculator.css">
+</head>
+<body>
+
+    <p id="display"></p>
+
+    <button class ="buttonC" onclick="
+    calculation = '';
+    localStorage.setItem('calculation', calculation);
+    console.log(calculation);
+    document.getElementById('display').innerText = calculation;
+    ">C</button>
+
+    <button class="button1-4" onclick="
+    calculation += '/';
+    localStorage.setItem('calculation', calculation);
+    console.log(calculation);
+    document.getElementById('display').innerText = calculation;
+    ">/</button>
+
+    <br>
+
+    <button class="button7" onclick="
+    calculation +='7';
+    localStorage.setItem('calculation', calculation);
+    console.log(calculation);
+    document.getElementById('display').innerText = calculation;
+    ">7</button>
+
+    <button class="button8" onclick="
+    calculation +='8';
+    localStorage.setItem('calculation', calculation);
+    console.log(calculation);
+    document.getElementById('display').innerText = calculation;
+    ">8</button>
+
+    <button class="button9" onclick="
+    calculation +='9';
+    localStorage.setItem('calculation', calculation);
+    console.log(calculation);
+    document.getElementById('display').innerText = calculation;
+    ">9</button>
+
+    <button class="button1-1" onclick="
+    calculation +=' * ';
+    localStorage.setItem('calculation', calculation);       
+    console.log(calculation);
+    document.getElementById('display').innerText = calculation;
+    ">*</button>
+
+    <br>
+
+    <button class="button4" onclick="
+    calculation +='4';
+    localStorage.setItem('calculation', calculation);   
+    console.log(calculation);
+    document.getElementById('display').innerText = calculation;
+    ">4</button>
+
+    <button class="button5" onclick="
+    calculation +='5';
+    localStorage.setItem('calculation', calculation);
+    console.log(calculation);
+    document.getElementById('display').innerText = calculation;
+    ">5</button>
+
+    <button class="button6" onclick="
+    calculation +='6';
+    localStorage.setItem('calculation', calculation);   
+    console.log(calculation);
+    document.getElementById('display').innerText = calculation;
+   ">6</button>
+
+   <button class="button1-2" onclick="
+    calculation +=' - ';
+    localStorage.setItem('calculation', calculation);   
+    console.log(calculation);
+    document.getElementById('display').innerText = calculation;
+   ">-</button>
+
+   <br>
+
+    <button class="button1" onclick="
+    calculation +='1';
+    localStorage.setItem('calculation', calculation);
+    console.log(calculation);
+    document.getElementById('display').innerText = calculation;
+    ">1</button>
+
+    <button class="button2" onclick="
+    calculation +='2';
+    localStorage.setItem('calculation', calculation);
+    console.log(calculation);
+    document.getElementById('display').innerText = calculation;
+    ">2</button>
+
+    <button class="button3" onclick="
+    calculation +='3';
+    localStorage.setItem('calculation', calculation);
+    console.log(calculation);
+    document.getElementById('display').innerText = calculation;
+    ">3</button>
+
+    <button class="button1-3" onclick="
+    calculation +=' + ';
+    localStorage.setItem('calculation', calculation);   
+    console.log(calculation);
+    document.getElementById('display').innerText = calculation;
+    ">+</button>
+
+    <br>
+
+    <button class="button0" onclick="
+    calculation +='0';
+    localStorage.setItem('calculation', calculation);
+    console.log(calculation);
+    document.getElementById('display').innerText = calculation;
+    ">0</button>
+
+    <button class="button1-5"onclick="
+    calculation +='.';
+    localStorage.setItem('calculation', calculation);
+    console.log(calculation);
+    document.getElementById('display').innerText = calculation;
+    ">.</button>
+
+    <button class="button1-6" onclick="
+    calculation = eval(calculation);
+    localStorage.setItem('calculation', calculation);
+    console.log(calculation);
+    document.getElementById('display').innerText = calculation;
+    ">=</button>
+
+
+
+
+
+
+
+
+
+
+
+</body> 
+    
+    <script>
+
+        let calculation = localStorage.getItem('calculation') || '';
+        document.getElementById('display').innerText = calculation;
+
+    </script>
+</body>
+</html>
