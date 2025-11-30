@@ -115,7 +115,7 @@
         */
         
         /*Create a function 'comparePrice(productl, product2)', which takes 2 products
-        (with 'name' and 'price' properties) and returns the product that is less expensive. Create 2 products and try out the function.*/
+        (with 'name' and 'price' properties) and returns the product that is less expensive. Create 2 products and try out the function.
 
        function comparePrice(product1, product2){
         if(product1.price<product2.price){
@@ -133,21 +133,29 @@
             price: 2500,
         }
         const cheaperProduct = comparePrice(ball, bat);
-        console.log(cheaperProduct, 'This is the cheaper product');
-       
+        console.log(cheaperProduct, 'This is the cheaper product');*/
 
-         
+        /*Create a function 'isSameProduct (product1, product2)', which returns true if 2 products have the same values inside ('name' and 'price'). 
+        If not, return false. Create 2 products and try out the function. (Hint: objects are references so you can't compare them directly)*/
 
-
-
-
-
-
-
-
+        function comparePrice(product1, product2){
+            return product1.name === product2.name && product1.price === product2.price;
+        }
+        const ball ={
+            name: "puma",
+            price: 2500,
+        }
+        const bat = {
+            name: "puma",
+            price: 2500,
+        }
+        console.log(comparePrice(ball, bat));
+        const bat2 = {
+            name: "puma",
+            price: 3000,
+        }
+        console.log(comparePrice(ball, bat2));
         
-        
-
     </script>
 </body>
 </html>
