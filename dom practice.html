@@ -41,17 +41,13 @@
          const result = document.querySelector('.js-result');
          document.querySelector('.js-button-heads')
          .addEventListener('click', () =>{
-            result.innerHTML = 'you lose : heads';
+            result.innerHTML = 'you chose : heads';
          });
 
-
-
-         
-
-
-       
-        
-            
+         document.querySelector('.js-button-tails')
+         .addEventListener('click', () => {
+            result.innerHTML = 'you chose : tails';
+         });
 
     </script>
 </body>
