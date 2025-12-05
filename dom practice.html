@@ -10,17 +10,45 @@
     
      
     <button>9a</button>
-    <button>9b</button>
+    <button class="js-button-9b">9b</button>
+    <br>
+    <button class="js-button-heads">heads</button>
+    <button class="js-button-tails">tails</button>
+
+    <p class="js-result"></p>
 
     <script>
 
         /*Create a <button>9a</button>, Use document.querySelector('button') 
-        to get the button from the page, and then display it in the console
+        to get the button from the page, and then display it in the console*/
+
+        /*Continuing from 9a, create another button <button>9b</button> below. 
+        Using JavaScript, change the text in the second button to '9b done!' (hint: add a class and use .querySelector).*/
         
 
-        ANSWER=
+        
         const button = document.querySelector('button');
-        console.log(button); */
+        console.log(button);
+        
+        const button9b = document.querySelector('.js-button-9b');
+        button9b.innerHTML = '9b done';
+
+
+       /* Create 2 buttons 'heads' and 'tails', and a paragraph (<p></p>) underneath.
+         When clicking the 'heads' button, display 'You chose: heads' in the paragraph. When the 'tails' button, display 'You chose: tails' */
+
+
+         const result = document.querySelector('.js-result');
+         document.querySelector('.js-button-heads')
+         .addEventListener('click', () =>{
+            result.innerHTML = 'you lose : heads';
+         });
+
+
+
+         
+
+
        
         
             
