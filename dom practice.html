@@ -14,8 +14,13 @@
     <br>
     <button class="js-button-heads">heads</button>
     <button class="js-button-tails">tails</button>
+    <br>
+
+    <input id="nameInput" type="text" placeholder="Enter yur name" onkeydown="handleKey(event)">
+    <button onclick="showName()">Submit</button>
 
     <p class="js-result"></p>
+    <p id="result"></p>
 
     <script>
 
@@ -48,8 +53,37 @@
          document.querySelector('.js-button-tails')
          .addEventListener('click', () => {
             result.innerHTML = 'you chose : tails';
-            
+
          });
+
+        /* Create a text box (<input>) and a submit button. When clicking 'Submit', display 'Your name is: ${text}' 
+         on the page (${text} = the text inside the text box) (hint: use .value to get the text inside an <input>) */
+
+
+         function showName(){
+            const text = document.getElementById('nameInput').value;
+            document.getElementById('result').innerText = 'your name is:'+text;
+          
+         }
+
+        /* Modify exercise 9d so that when you press 'Enter' in the <input>, 
+         it will also display the same message on the page (hint: use onkeydown and the event object).*/
+
+         function showName(){
+            const text = document.getElementById('nameInput').value;
+            document.getElementById('result').innerText = 'your name is:'+text;
+        
+         }
+
+         function handleKey(event){
+            if (event.keyv === "enter"){
+                showName();
+            }
+         }
+         
+
+
+
 
 
          
