@@ -16,14 +16,37 @@
             font-size: 30px;
             font-weight: bold;
         }
-        .rock-img{
+        .game-img{
             height: 50px;
             
         }
+        .game-button{
+          background-color: transparent;
+          border: 3px solid white;
+          width: 110px;
+          height: 110px;
+          border-radius: 70px;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+
+        .result{
+          font-size: 22px;
+          font-weight: bold;
+          margin-top: 50px;
+        }
+        .score{
+          margin-top: 55px;
+        }
+        .reset-button{
+          background-color: white;
+          border: none;
+          font-size: 15px;
+          padding:10px 15px;
+          cursor: pointer;
+        }
 
     </style>
-
-
 
 
 
@@ -31,14 +54,16 @@
 <body>
     <p class="title">Rock Papper Scssor - HTML/CSS</p>
 
-    <button onclick="playGame('rock');"><img src="images/rock-emoji.png" class="rock-img"></button>
-    <button onclick="playGame('paper');">Paper</button>
-    <button onclick="playGame('scissors');">Scissors</button>
+    <button onclick="playGame('rock');" class="game-button"><img src="images/rock-emoji.png" class="game-img"></button>
+    <button onclick="playGame('paper');" class="game-button"><img src="images/paper-emoji.png" class="game-img"></button>
+    <button onclick="playGame('scissors');" class="game-button"><img src="images/scissors-emoji.png" class="game-img"></button>
 
 
-    <p class="js-resut"></p>
-    <p class="js-moves"></p>
-    <p class="js-score"></p>
+    <p class="js-resut result"> .</p>
+    <p class="js-moves">
+  
+    </p>
+    <p class="js-score score">  </p>
 
 
     <button onclick="
@@ -49,7 +74,7 @@
 
         updateScoreDisplay();
 
-    ">Reset Score</button>
+    " class="reset-button">Reset Score</button>
 
     <script>
       let score = JSON.parse(localStorage.getItem('score')) || { 
@@ -114,9 +139,22 @@
         document.querySelector('.js-resut').
         innerHTML = result;
 
-        document.querySelector('.js-moves').innerHTML
-        = `you picked ${playerMove}. Computer picked ${computerMove}.`;
 
+
+
+
+
+      document.querySelector('.js-moves').innerHTML = `You
+      <img src="images/${playerMove}-emoji.png" class="game-img" alt="Player chose ${playerMove}">
+      <img src="images/${computerMove}-emoji.png" class="game-img">
+      Computer`;
+
+
+
+
+
+
+      
 
     }
         function updateScoreDisplay() {
