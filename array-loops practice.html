@@ -36,11 +36,27 @@
             console.log(getLastValue(['hy', 'hello','good']));*/
 
 
-            
+            /*Create a function arraySwap(array) that takes an array and returns an array where the
+             first and last values are swapped (or switched).
 
 
+            arraySwap([1, 20, 22, 24, 5]) => [5, 20, 22, 24, 1]
 
+            arraySwap(['hi', 'hello', 'good']) => ['good', 'hello', 'hi']*/
 
+            function arraySwap(array){
+                const lastIndex = array.length -1;
+
+                const  lastvalue= array[lastIndex];
+                const  firstvalue= array[0];
+
+                array[0] = lastvalue;
+                array[lastIndex] = firstvalue;
+
+                return array;
+            }
+            console.log (arraySwap([1, 20, 22, 24, 5]));
+            console.log (arraySwap(['hi', 'hello', 'good']));
 
     </script> 
     
