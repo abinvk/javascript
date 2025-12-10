@@ -1,3 +1,4 @@
+
 const todoList = [{
     name:'make dinner',
     dueDate: '2024-06-30'
@@ -44,7 +45,7 @@ todoList.push({
     //dueDate: dueDate,
     name,
     dueDate
-});
+} );
 inputElement.value = '';
 renderTdoList();
 

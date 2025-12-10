@@ -169,12 +169,66 @@
            minMax([-2, 3, -5, 7, 10]) => {min: nin: -5, max: 10}  */
 
 
-           function minMax(nums){
+           /*function minMax(nums){
 
             let min = nums[0];
-    
+           }*/
 
-           }
+
+           /*Create an array of strings, loop over the array, and check if the string 'search' is inside the array.
+            If it is, console.log() the index of 'search' in
+
+            in the array. If not, console.log '-I'.
+
+            ["hello, 'world', 'search', 'good'] => console.log(2)
+
+            ['not', 'found'] => console.log(-1)*/
+
+
+              /*const strings = ['hello', 'world', 'search', 'good'];
+                const search = 'search';
+                let foundIndex = -1;
+                for (let i = 0; i < strings.length; i++) {
+                    if (strings[i] === search) {
+                        foundIndex = i;
+                        break;
+                    }
+                }
+                console.log(foundIndex);*/
+
+
+               /* Modify 11o so that if 'search' appears multiple times in the array, it console.log()
+                the index of the first appearance of 'search'. Use brea 
+
+               ['hello', 'world', 'search', 'good', 'search'] => console.log(2) */
+
+
+               const strings = ['hello', 'world', 'search', 'good', 'search'];
+                const search = 'search';
+                let foundIndex = -1;
+                for (let i = 0; i < strings.length; i++) {
+                    if (strings[i] === search) {
+                        foundIndex = i;
+                        break;
+                    }
+                }
+                console.log(foundIndex);
+
+
+                
+                 strings = ['not', 'found'];
+                 foundIndex = -1;
+                  
+                    for (let i = 0; i < strings.length; i++) {
+                        if (strings[i] === search) {
+                            foundIndex = i;
+                            break;
+                        }
+                    }
+                    console.log(foundIndex);
+                
+
+
 
 
            
