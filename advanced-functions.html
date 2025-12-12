@@ -6,6 +6,40 @@
     <title>Advanced functions</title>
 </head>
 <body>
-    
+    <script>
+
+        function greet(){
+            console.log("Hello, welcome to advanced functions!");
+        }
+        greet();
+
+        const num = 2;
+        const function1 = function(){
+             console.log('hello2');
+        }
+        function1();
+
+        const object= {
+            name:"abin",
+            function2: function(){
+              console.log("hello3 " + this.name);
+            }
+        }
+        object.function2();
+
+        function add(not){
+             console.log(not);
+        }
+        add(5);
+
+        function run(param){
+            param();
+        }
+        run(function(){
+             console.log("hello from callback");
+        });
+
+
+    </script>
 </body>
 </html>
