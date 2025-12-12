@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Functions-Rock-Papper-Scissor-HTML-JAVASCRIPT</title>
     <link rel="stylesheet" href="0.1functions-rock-papper-scissor.css">
-    <script src="0.1functions-rock-papper-scissor.js"></script>
   </head>
   <body>
 
@@ -31,11 +30,15 @@
       score.ties = 0;
         localStorage.setItem('score', JSON.stringify(score));
 
-        updateScoreDisplay();
+        updateScoreDisplay();"
 
-    " class="reset-button">Reset Score</button>
+     class="reset-button">Reset Score</button>
+
+     <button class="auto-btn"
+     onclick="autoPlay();"
+     >Auto Play</button>
     
 
-  
+      <script src="0.1functions-rock-papper-scissor.js"></script>
   </body>
   </html>
