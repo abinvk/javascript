@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions-Rock-Papper-Scissor-HTML-JAVASCRIPT</title>
+    <link rel="stylesheet" href="0.1functions-rock-papper-scissor.css">
+    <script src="0.1functions-rock-papper-scissor.js"></script>
+  </head>
+  <body>
+
+
+    <p class="title">Rock Papper Scssor-HTML-CSS-JAVASCRIPT</p>
+    <BR>
+
+    <button onclick="playGame('rock');" class="game-button"><img src="images/rock-emoji.png" class="game-img"></button>
+    <button onclick="playGame('paper');" class="game-button"><img src="images/paper-emoji.png" class="game-img"></button>
+    <button onclick="playGame('scissors');" class="game-button"><img src="images/scissors-emoji.png" class="game-img"></button>
+
+
+    <p class="js-resut result"> .</p>
+    <p class="js-moves">
+  
+    </p>
+    <p class="js-score score">  </p>
+
+
+    <button onclick="
+      score.wins = 0;
+      score.losses = 0;
+      score.ties = 0;
+        localStorage.setItem('score', JSON.stringify(score));
+
+        updateScoreDisplay();
+
+    " class="reset-button">Reset Score</button>
+  
+  </body>
+  </html>

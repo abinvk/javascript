@@ -1,0 +1,38 @@
+        body{
+            background-color: rgb(25,25,25);
+            color: white;
+            font-family: Arial;
+        }
+        title{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .game-img{
+            height: 50px;
+            
+        }
+        .game-button{
+          background-color: transparent;
+          border: 3px solid white;
+          width: 110px;
+          height: 110px;
+          border-radius: 70px;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+
+        .result{
+          font-size: 22px;
+          font-weight: bold;
+          margin-top: 50px;
+        }
+        .score{
+          margin-top: 55px;
+        }
+        .reset-button{
+          background-color: white;
+          border: none;
+          font-size: 15px;
+          padding:10px 15px;
+          cursor: pointer;
+        }
