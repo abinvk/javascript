@@ -6,22 +6,29 @@
     <title>FUNCTIONS-QUESTIONS</title>
 </head>
 <body>
+    <button id="myButton">Click me</button>
     <script>
 
+        const button = document.querySelector('myButton');
+        button.addEventListener('click', function() {
 
-
+            button.textContent = 'Processing...';
+            setTimeout(function() {
+                button.textContent = 'Finished!';
+            }, 1000);
+        });
+    </script>
+</body>   
+    <script>
 
         /*Create a variable called 'add' and save a function inside. 
         This function will console.log(2 + 3); Run the function twice.
 
-
         const add = function(){
             console.log(2 + 3);
 
-
         };
         add(); */
-
 
         /* Continuing from exercise 12a, create a function runTwice(fun) that takes a function (as a parameter) and runs it twice.
 
@@ -29,9 +36,6 @@
 
         runTwice(add); => console.log(5) twice   */
        
-        
-
-        
         /* const add = function(){
             console.log(2 + 3);
         };
@@ -44,7 +48,7 @@
         }
         console.log('12b'); */
 
-        
+
 
         
         
