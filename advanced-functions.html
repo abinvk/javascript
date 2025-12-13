@@ -59,6 +59,9 @@
             'cherry'
 
         ].forEach(function(fruit,index){
+            if (fruit === 'banana'){
+                return;
+            }
             console.log(index);
             console.log(fruit);
         });
